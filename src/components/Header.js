@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import {
   Collapse,
   Container,
@@ -75,23 +76,33 @@ class Header extends Component {
           className="orange header-area navbar navbar-expand-md navbar-dark"
           ref={ this.nav }
           style = { this.state.headerStyle}
-          >
+        >
           <Container>
-            <NavbarBrand href="/"><h1>Nolan Hellyer</h1></NavbarBrand>
+            <NavbarBrand href="/">
+              <h1>Nolan Hellyer</h1>
+            </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink href="/components/">Home</NavLink>
+                  <NavLink>
+                    <AnchorLink href="#home">Home</AnchorLink>
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://github.com/reactstrap/reactstrap">Resume</NavLink>
+                  <NavLink>
+                    <AnchorLink href="#resume">Resume</AnchorLink>
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://github.com/reactstrap/reactstrap">Projects</NavLink>
+                  <NavLink>
+                    <AnchorLink href="https://github.com/reactstrap/reactstrap">Projects</AnchorLink>
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://github.com/reactstrap/reactstrap">Connect</NavLink>
+                  <NavLink>
+                    <AnchorLink href="https://github.com/reactstrap/reactstrap">Connect</AnchorLink>
+                  </NavLink>
                 </NavItem>
               </Nav>
             </Collapse>

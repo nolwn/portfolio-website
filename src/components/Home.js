@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "reactstrap";
 
 const Home = () =>
-  <Container className="section">
+  <Container className="section" id="home">
     <h1>Home</h1>
     <p>
       I am a web developer with experience in Node, Express and React. I am from, and still living in, Seattle. I play guitar, I listen to podcasts, and I still can’t get enough of FTL: Faster Than Light. I think it was my boyhood dream to captain my own starship. It might still be my dream…
