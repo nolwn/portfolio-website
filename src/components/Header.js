@@ -10,6 +10,7 @@ import {
   NavItem,
   NavLink
 } from "reactstrap";
+import { Arrow } from "./index";
 
 class Header extends Component {
   constructor(props) {
@@ -21,7 +22,8 @@ class Header extends Component {
           height: "100vh",
           width: "100%",
           position: "absolute",
-          bottom: 0
+          bottom: 0,
+          zIndex: 5
       }
     }
 
@@ -34,7 +36,7 @@ class Header extends Component {
   componentDidMount = () => {
     window.addEventListener("scroll", this.handleScroll);
     window.onresize = this.handleScroll;
-  }
+  };
 
   handleScroll = e => {
     const areaHeight = this.area.current.offsetHeight;
@@ -48,8 +50,7 @@ class Header extends Component {
           ...this.state.headerStyle,
           position: "fixed",
           bottom: "inherit",
-          height: "100px"
-        }
+          height: "100px"        }
       })
 
     } else {
@@ -62,13 +63,13 @@ class Header extends Component {
       })
     }
 
-  }
+  };
 
   toggle = () => {
     this.setState({
       isOpen: !this.state.isOpen
     });
-  }
+  };
 
   render = () =>
     <div className="header-area" ref={ this.area }>
@@ -86,7 +87,7 @@ class Header extends Component {
               <Nav className="ml-auto" navbar>
                 <NavItem>
                   <NavLink>
-                    <AnchorLink href="#home">Home</AnchorLink>
+                    <AnchorLink href="#1">About</AnchorLink>
                   </NavLink>
                 </NavItem>
                 <NavItem>
@@ -108,7 +109,11 @@ class Header extends Component {
             </Collapse>
           </Container>
         </nav>
-    </div>
+        <div style={{ opacity: 1 - (window.scrollY * .01) }}>
+          <Arrow number="1" white />
+        </div>
+
+    </div>;
 }
 
 export default Header;

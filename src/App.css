@@ -17,22 +17,24 @@ h1 {
   background: #DE3D28;
 }
 
+.blue {
+  background: #88aaff
+}
+
 .header-area {
   height: 100vh;
 }
 
-.section {
+/* .section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* text-align: center; */
-}
+} */
 
 .navbar-dark .navbar-nav .nav-link a {
   color: white;
   text-transform: uppercase;
-  padding: 0;
 }
 
 .navbar h1 {
