@@ -19,11 +19,11 @@ class Header extends Component {
     this.state = {
       isOpen: false,
       headerStyle: {
-          height: "100vh",
-          width: "100%",
-          position: "absolute",
-          bottom: 0,
-          zIndex: 5
+        height: "100vh",
+        width: "100%",
+        position: "absolute",
+        bottom: 0,
+        zIndex: 5
       }
     }
 
