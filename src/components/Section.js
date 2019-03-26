@@ -14,7 +14,7 @@ const sectionStyle = {
 
 const Section = props =>
 <Container className="section" id="1">
-  <div style={ sectionStyle } id={ props.number || 1 }>
+  <div id={ props.number || 1 }>
     { props.children }
   </div>
 </Container>

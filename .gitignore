@@ -25,3 +25,5 @@ yarn-error.log*
 # Artfiles
 *.afdesign
 *.afphoto
+
+*firebase*

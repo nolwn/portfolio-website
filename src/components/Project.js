@@ -1,6 +1,5 @@
 import React from "react";
-
-import { DemoBox } from "./index";
+import { DemoBox, LinkGroup } from "./index";
 
 const Project = props =>
   <div>
@@ -9,6 +8,7 @@ const Project = props =>
         skills={ props.skills }
         file={ props.file }
       />
+    <LinkGroup links={ props.links } />
     {
       props.children
     }

@@ -16,6 +16,20 @@ const Projects = () =>
         "Node.js",
         "Express.js"
       ]}
+      links={[
+        {
+          type: "GitHub",
+          url: "https://github.com/nolwn/capstone"
+        },
+        {
+          type: "frontend",
+          url: "https://chess-match.herokuapp.com"
+        },
+        {
+          type: "backend",
+          url: "https://chess-match-api.herokuapp.com"
+        }
+      ]}
     >
       <p>Chess Match is a chess server that enables users to play with each other in real time. The client communicates with the API using both RESTful API calls, and WebSockets through Socket.io. The API stores past games, verifies moves, and manages multiple active games across many users.</p>
     </Project>
@@ -30,6 +44,12 @@ const Projects = () =>
         "Express.js",
         "HTML/CSS"
       ]}
+      links={[
+        {
+          type: "GitHub",
+          url: "https://github.com/nolwn/express-blog"
+        }
+      ]}
     >
     <p>A web program that allows anyone to make posts to a single wall. Unit testing of backend functions is done with Mocha and Chai.
     </p>
@@ -42,10 +62,20 @@ const Projects = () =>
         "Node.js",
         "APIs",
         "Express.js",
-        "HTML/CSS",
         "React",
         "Redux",
-        "PostgreSQL"
+        "PostgreSQL",
+        "HTML/CSS"
+      ]}
+      links={[
+        {
+          type: "GitHub (frontend)",
+          url: "https://github.com/nolwn/q3-project-front-end "
+        },
+        {
+          type: "GitHub (backend)",
+          url: "https://github.com/nolwn/q3-project-back-end"
+        }
       ]}
     >
       <p>A web program where users can track the “mana curves” of card decks built for Magic: The Gathering card game. Built collaboratively with one other person using Git.</p>
