@@ -5,7 +5,7 @@ import { LinkGroup } from "./index";
 const Connect = props =>
   <div style={{ background: "#333", padding: "75px 0px", color: "white" }}>
     <Container>
-      <Row>
+      <Row id={ props.number }>
         <Col md="5" style={{ textAlign: "right" }}>
           <h2>Connect</h2>
         </Col>
