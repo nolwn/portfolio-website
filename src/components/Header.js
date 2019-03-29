@@ -92,17 +92,17 @@ class Header extends Component {
                 </NavItem>
                 <NavItem>
                   <NavLink>
-                    <AnchorLink href="#resume">Resume</AnchorLink>
+                    <AnchorLink href="#2">Experience</AnchorLink>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink>
-                    <AnchorLink href="https://github.com/reactstrap/reactstrap">Projects</AnchorLink>
+                    <AnchorLink href="#3">Projects</AnchorLink>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink>
-                    <AnchorLink href="https://github.com/reactstrap/reactstrap">Connect</AnchorLink>
+                    <AnchorLink href="#4">Connect</AnchorLink>
                   </NavLink>
                 </NavItem>
               </Nav>

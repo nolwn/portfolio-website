@@ -18,12 +18,13 @@ class App extends Component {
         <Section number="1">
           <Home />
         </Section>
-        <Section>
+        <Section number="2">
           <Resume />
         </Section>
-        <Section>
+        <Section number="3">
           <Projects />
         </Section>
+        <Connect number="4" />
     </div>
 }
 

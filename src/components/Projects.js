@@ -19,15 +19,18 @@ const Projects = () =>
       links={[
         {
           type: "GitHub",
-          url: "https://github.com/nolwn/capstone"
+          url: "https://github.com/nolwn/capstone",
+          text: "github.com/nolwn/capstone"
         },
         {
           type: "frontend",
-          url: "https://chess-match.herokuapp.com"
+          url: "https://chess-match.herokuapp.com",
+          text: "chess-match.herokuapp.com"
         },
         {
           type: "backend",
-          url: "https://chess-match-api.herokuapp.com"
+          url: "https://chess-match-api.herokuapp.com",
+          text: "chess-match-api.herokuapp.com"
         }
       ]}
     >
@@ -47,7 +50,8 @@ const Projects = () =>
       links={[
         {
           type: "GitHub",
-          url: "https://github.com/nolwn/express-blog"
+          url: "https://github.com/nolwn/express-blog",
+          text: "github.com/nolwn/express-blog"
         }
       ]}
     >
@@ -70,11 +74,14 @@ const Projects = () =>
       links={[
         {
           type: "GitHub (frontend)",
-          url: "https://github.com/nolwn/q3-project-front-end "
+          url: "https://github.com/nolwn/q3-project-front-end",
+          text: "github.com/nolwn/q3-project-front-end"
+
         },
         {
           type: "GitHub (backend)",
-          url: "https://github.com/nolwn/q3-project-back-end"
+          url: "https://github.com/nolwn/q3-project-back-end",
+          text: "github.com/nolwn/q3-project-back-end"
         }
       ]}
     >

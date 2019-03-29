@@ -7,6 +7,7 @@ const LinkGroup = props =>
       props.links ? props.links.map(link =>
         <ProjectLink
           type={ link.type }
+          text={ link.text }
           link={ link.url }
         />) : ""
     }
